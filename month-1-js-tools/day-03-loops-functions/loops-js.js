@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync")();
 
+function miniFizzBuzz(){
 console.log("=== Welcome to your Mini FizzBuzz Game ===");
 
 console.log(" 🍀you actually get to choose your max iterator value🍀");
@@ -20,3 +21,6 @@ for(let i = 1; i <= userIterator; i++ ){
         console.log(i)
     }
 }
+}
+
+miniFizzBuzz()
