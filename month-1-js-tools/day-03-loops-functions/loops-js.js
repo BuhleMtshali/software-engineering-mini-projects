@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-let userIterator = int(prompt("Enter the value of your iterator: "));
+let userIterator = parseFloat(prompt("Enter the value of your iterator: "));
 
 //get the the value of i from the user
 for(let i = 1; i <= userIterator; i++ ){
