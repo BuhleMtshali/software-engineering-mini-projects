@@ -1,3 +1,4 @@
+const prompt = require("prompt-sync")();
 //array to hold inventory
 let inventory = [];
 
@@ -33,6 +34,7 @@ do{
                 }
 
                 inventory.push(product);
+                console.log(`${productName} has been successfully added!!!`);
             } else{
                 console.log('invalid input, please try again!!')
             }
@@ -40,7 +42,7 @@ do{
         case '2':
             if(inventory){
                 inventory.forEach((product) => {
-                    console.log(product)
+                    console.log(`Product Name: ${product.productName}, Product Price: R${product.productPrice}`)
                 })
             } else{
                 console.log('Inventory is currently empty, please add something first!!')
@@ -48,19 +50,9 @@ do{
         break;
         case '3':
             let removeItem = prompt('Enter the name of the product you want to remove: ');
-
-            inventory.forEach((product) => {
-                if(product.productName.toLowerCase() === removeItem.toLowerCase()){
-                    inventory.filter(item => item.productName !== removeItem)
-                    console.log(`${removeItem} has been successfuly removed from inventory!!`);
-                    console.log('--- Here are the items left in the inventory: ');
-                    inventory.forEach((product) => {
-                    console.log(product)
-                    });
-                } else{
-                    console.log(`${removeItem} is in inventory`)
-                }
-            });
+            updatedInventory = inventory.filter(item => item.name !== removeItem);
+            console.log(`${removeItem} has been succefully removed!`);
+            console.log(updatedInventory);
         break;
         case '4':
             console.log('Thank you for trying the mini inventory tracker')
