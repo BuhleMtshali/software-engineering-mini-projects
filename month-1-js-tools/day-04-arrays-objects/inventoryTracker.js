@@ -57,10 +57,16 @@ do{
                     inventory.forEach((product) => {
                     console.log(product)
                     });
+                } else{
+                    console.log(`${removeItem} is in inventory`)
                 }
-            })
+            });
+        break;
+        case '4':
+            console.log('Thank you for trying the mini inventory tracker')
+            break;
+        default:
+            console.log(`${choice} is an invalid choice, please try again!!`);
+     } 
 
-            
-     }
-
-}
+} while (choice !== 4)
