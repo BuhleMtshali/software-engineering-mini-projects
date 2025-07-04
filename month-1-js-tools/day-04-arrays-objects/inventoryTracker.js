@@ -24,11 +24,15 @@ do{
      switch(choice){
         case '1':
             let productName = prompt('Enter the product name: ');
+            let productQuantity = parseInt(prompt('Enter how many products you want to add: '))
             let productPrice = parseFloat(prompt('Enter the price of your product (in rands): '));
+            let totalPrice = parseFloat(productPrice * productQuantity);
 
             let product = {
             productName: productName,
-            productPrice: productPrice
+            productPrice: productPrice,
+            productQuantity: productQuantity,
+            totalPrice: totalPrice
             };
 
             inventory.push(product);
@@ -39,7 +43,9 @@ do{
             if(inventory.length > 0){
                 inventory.forEach((product, index) => {
                     console.log(`${index + 1}. Product Name: ${product.productName}`);
-                    console.log(`   Product Price: R${product.productPrice}`);
+                    console.log(`   Product Quantity: ${product.productQuantity}`);
+                    console.log(`   Product Price(each): R${product.productPrice}`);
+                    console.log(`   Total Product Price: R${product.totalPrice}`);
                     console.log('--------------------------------');
                 })
             } else{
