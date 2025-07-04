@@ -27,7 +27,7 @@ do{
             let productPrice = parseFloat(prompt('Enter the price of your product (in rands): '));
 
             let product = {
-            productName: productName.toLowerCase(),
+            productName: productName.toUpperCase(),
             productPrice: productPrice
             };
 
@@ -37,8 +37,10 @@ do{
 
         case '2':
             if(inventory.length > 0){
-                inventory.forEach((product) => {
-                    console.log(`Product Name: ${product.productName}, Product Price: R${product.productPrice}`)
+                inventory.forEach((product, index) => {
+                    console.log(`${index + 1}. Product Name: ${product.productName}`);
+                    console.log(`   Product Price: R${product.productPrice}`);
+                    console.log('--------------------------------');
                 })
             } else{
                 console.log('Inventory is currently empty, please add something first!!')
