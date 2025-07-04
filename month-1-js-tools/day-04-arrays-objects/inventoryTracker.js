@@ -27,12 +27,12 @@ do{
             let productPrice = parseFloat(prompt('Enter the price of your product (in rands): '));
 
             let product = {
-            productName: productName.toUpperCase(),
+            productName: productName,
             productPrice: productPrice
             };
 
             inventory.push(product);
-            console.log(`${productName} has been successfully added!!!`);
+            console.log(`${product.productName} has been successfully added!!!`);
         break;
 
         case '2':
