@@ -29,7 +29,7 @@ do{
                 let productPrice = parseFloat(prompt('Enter the price of your product(in rands): '));
 
                 let product = {
-                    productName: productName,
+                    productName: productName.toLowerCase(),
                     productPrice: productPrice
                 }
 
@@ -49,10 +49,16 @@ do{
             }
         break;
         case '3':
-            let removeItem = prompt('Enter the name of the product you want to remove: ');
-            updatedInventory = inventory.filter(item => item.name !== removeItem);
-            console.log(`${removeItem} has been succefully removed!`);
-            console.log(updatedInventory);
+            if(!inventory){
+                console.log(`Your inventory is currently empty!!`)
+            } else{
+                let removeItem = prompt('Enter the name of the product you want to remove: ');
+                inventory = inventory.filter(item => item.productName !== removeItem.toLowerCase());
+                console.log(`${removeItem} has been succefully removed!`);
+                console.log(`Here are the items left in your inventory: `);
+                console.log(inventory);
+            }
+            
         break;
         case '4':
             console.log('Thank you for trying the mini inventory tracker')
