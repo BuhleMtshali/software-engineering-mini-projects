@@ -23,24 +23,20 @@ do{
      //using switch to operate the inventory
      switch(choice){
         case '1':
+            let productName = prompt('Enter the product name: ');
+            let productPrice = parseFloat(prompt('Enter the price of your product (in rands): '));
 
-            if(choice == '1'){
-                let productName = prompt('Enter the product name: ');
-                let productPrice = parseFloat(prompt('Enter the price of your product(in rands): '));
+            let product = {
+            productName: productName.toLowerCase(),
+            productPrice: productPrice
+            };
 
-                let product = {
-                    productName: productName.toLowerCase(),
-                    productPrice: productPrice
-                }
+            inventory.push(product);
+            console.log(`${productName} has been successfully added!!!`);
+        break;
 
-                inventory.push(product);
-                console.log(`${productName} has been successfully added!!!`);
-            } else{
-                console.log('invalid input, please try again!!')
-            }
-            break;
         case '2':
-            if(inventory){
+            if(inventory.length > 0){
                 inventory.forEach((product) => {
                     console.log(`Product Name: ${product.productName}, Product Price: R${product.productPrice}`)
                 })
@@ -49,17 +45,27 @@ do{
             }
         break;
         case '3':
-            if(inventory){
-                let removeItem = prompt('Enter the name of the product you want to remove: ');
-                inventory = inventory.filter(item => item.productName !== removeItem.toLowerCase());
-                console.log(`${removeItem} has been succefully removed!`);
-                console.log(`Here are the items left in your inventory: `);
-                console.log(inventory);
-            } else{
-                console.log('inventory is currently empty')
+            if (inventory.length > 0) {
+                let removeItem = prompt('Enter the name of the product you want to remove: ').toLowerCase();
+
+                const itemExists = inventory.some(item => item.productName === removeItem);
+                if (!itemExists) {
+                console.log(`❌ ${removeItem} not found in your inventory.`);
+                } else {
+                inventory = inventory.filter(item => item.productName !== removeItem);
+                console.log(`✅ ${removeItem} has been successfully removed!`);
             }
-            
+
+                console.log(`📦 Remaining Inventory:`);
+                inventory.forEach((product) => {
+                console.log(`- ${product.productName} @ R${product.productPrice}`);
+                 });
+
+                } else {
+                console.log('⚠️ Inventory is currently empty');
+            }
         break;
+
         case '4':
             console.log('Thank you for trying the mini inventory tracker')
             break;
@@ -67,4 +73,4 @@ do{
             console.log(`${choice} is an invalid choice, please try again!!`);
      } 
 
-} while (choice !== 4)
+} while (choice !== '4')
