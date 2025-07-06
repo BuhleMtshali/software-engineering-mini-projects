@@ -54,7 +54,7 @@ main{
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 main small{
@@ -64,12 +64,18 @@ main small{
 
 .input-wrapper{
     width: 100%;
-    max-width: 100%;
+    max-width: 80%;
     margin:15px auto;
     display: flex;
     gap: 15px;
 }
-
+.list-wrapper{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .input-wrapper input{
     width: 100%;
     padding: 20px;
@@ -101,11 +107,15 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin:15px auto;
+    gap: 15px;
 
 }
 
 .list li{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 #delete-btn{
@@ -113,4 +123,5 @@ input::placeholder{
     height: 30px;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 }
