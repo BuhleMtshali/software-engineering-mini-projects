@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --apricot-white: #FFFEEC;
+    --gold-green: #CAC426;
+    --deep-charcoal: #222223;
+    --lavender: #BCB4FF;
+}
+
+*{
+    font-family: "Inter Tight", sans-serif;
+}
+
+.container{
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--apricot-white);
+    padding: 20px;
+}
