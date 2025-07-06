@@ -13,6 +13,10 @@
     margin: 0;
 }
 
+*:focus{
+    outline: none;
+}
+
 .container{
     max-width: 750px;
     width: 100%;
@@ -67,4 +71,26 @@ main small{
 .input-wrapper input{
     width: 100%;
     padding: 20px;
+    border: 3px solid var(--lavender);
+    color: var(--lavender);
+    font-size: 1.2rem;
+}
+
+input::placeholder{
+    font-size: 1.2rem;
+}
+
+.input-wrapper button{
+    background-color: var(--gold-green);
+    color: var(--apricot-white);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-wrapper button:hover{
+    background-color: var(--apricot-white);
+    border: 2px solid var(--lavender);
+    color: var(--lavender);
 }
