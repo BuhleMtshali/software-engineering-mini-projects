@@ -28,9 +28,18 @@ function renderTask(tasks){
         html += `
                 <div class="list">
                 <li>${task}</li>
-                <img src="assets/trash.png" alt="" class="delete-btn">
+                <img src="assets/trash.png" alt="" class="delete-btn" data-index=${index}>
                 </div>
                 `
         listWrapper.innerHTML = html;
+        document.querySelectorAll('.delete-btn').forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                console.log(btn.dataset.index)
+               if(btn.dataset.index === btn.dataset.index){
+                e.target.closest('li');
+                listWrapper.remove()
+               }
+            })
+        })
     })
 }
