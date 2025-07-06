@@ -13,6 +13,12 @@
     margin: 0;
 }
 
+input:focus{
+    outline: 2px solid var(--gold-green);
+    border: none;
+    color: var(--deep-charcoal);
+}
+
 *:focus{
     outline: none;
 }
@@ -23,7 +29,7 @@
     height: auto;
     margin: 0 auto;
     background-color: var(--apricot-white);
-    padding: 20px;
+    padding: 30px;
 }
 
 header{
@@ -52,6 +58,7 @@ header h1{
 form{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -67,4 +74,14 @@ input, textarea{
     border: 3px solid var(--lavender);
     color: var(--lavender);
     font-size: 1.2rem;
+}
+
+button{
+    width: 50%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: var(--gold-green);
+    color: var(--apricot-white);
+    border: none;
+    margin-top: 15px;
 }
