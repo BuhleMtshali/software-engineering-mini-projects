@@ -1,7 +1,7 @@
 //defining the variables
 const inputBox = document.querySelector('#search-bar');
 const addTaskBtn = document.querySelector('#add-task');
-let deleteBtn = document.querySelectorAll('.delete-btn');
+let listWrapper = document.querySelector('.list-wrapper')
 
 //todo list to store tasks
 const taskList = [];
@@ -14,8 +14,23 @@ addTaskBtn.addEventListener('click', () => {
         alert('task already exists, no duplicates friend')
     } else{
         taskList.push(inputBox.value);
-        console.log(taskList);
+        renderTask(taskList)
         inputBox.value = ''
     }
    }
 })
+
+
+
+function renderTask(tasks){
+    let html = '';
+    tasks.forEach((task, index) => {
+        html += `
+                <div class="list">
+                <li>${task}</li>
+                <img src="assets/trash.png" alt="" class="delete-btn">
+                </div>
+                `
+        listWrapper.innerHTML = html;
+    })
+}
