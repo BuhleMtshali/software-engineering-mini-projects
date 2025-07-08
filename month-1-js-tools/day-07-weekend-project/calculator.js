@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")();
 
-welcomeMessage = '\n--------- Welcome to My Mini CLI Based Calculator🧮 -------------';
-
+const welcomeMessage = '\n--------- Welcome to My Mini CLI Based Calculator🧮 -------------';
+console.log(welcomeMessage)
 let firstNumber = parseFloat(prompt("Enter your first number: "));
 let operator = prompt("Choose an operator (+, -, *, /): ")
 let secondNumber = parseFloat(prompt("Enter your second number: "))
@@ -31,4 +31,4 @@ switch(operator){
         console.log(`${operator} is invalid please try again!`)
 }
 
-console.log(result)
+console.log(`Result: ${firstNumber} ${operator} ${secondNumber} = ${result}`);
