@@ -2,11 +2,15 @@ const prompt = require("prompt-sync")();
 
 const welcomeMessage = '\n--------- Welcome to My Mini CLI Based Calculator🧮 -------------';
 console.log(welcomeMessage)
-let firstNumber = parseFloat(prompt("Enter your first number: "));
-let operator = prompt("Choose an operator (+, -, *, /): ")
-let secondNumber = parseFloat(prompt("Enter your second number: "))
+
+let runAgain = "yes";
 
 let result = parseFloat(0);
+
+while(runAgain.toLowerCase() || runAgain.toLowerCase === "y"){
+    let firstNumber = parseFloat(prompt("Enter your first number: "));
+let operator = prompt("Choose an operator (+, -, *, /): ")
+let secondNumber = parseFloat(prompt("Enter your second number: "))
 
 
 //switch to start the program
@@ -32,3 +36,8 @@ switch(operator){
 }
 
 console.log(`✅ Result: ${firstNumber} ${operator} ${secondNumber} = ${result.toFixed(2)}`);
+
+runAgain = prompt('Would you like to perform another calculation? (yes/no): ')
+
+}
+
