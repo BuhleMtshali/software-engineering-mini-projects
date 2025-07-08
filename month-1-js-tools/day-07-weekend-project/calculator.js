@@ -31,4 +31,4 @@ switch(operator){
         console.log(`${operator} is invalid please try again!`)
 }
 
-console.log(`Result: ${firstNumber} ${operator} ${secondNumber} = ${result}`);
+console.log(`✅ Result: ${firstNumber} ${operator} ${secondNumber} = ${result.toFixed(2)}`);
