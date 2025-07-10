@@ -22,3 +22,19 @@ if (includeUpper) charPool += upperLetters;
 if (includeNumbers) charPool += numbers;
 if (includeSymbols) charPool += symbols;
 
+//generating the password
+function passwordFactory(pool) {
+    return function(length) {
+        let pass = "";
+        for (let i = 0; i < length; i++) {
+            let index = Math.floor(Math.random() * pool.length);
+            pass += pool[index];
+        }
+        return pass;
+    };
+}
+
+const myGenerator = passwordFactory(charPool);
+console.log(`🔑 Your closure-generated password is: ${myGenerator(length)}`);
+
+
