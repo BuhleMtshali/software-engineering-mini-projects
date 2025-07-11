@@ -29,6 +29,25 @@ while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
         studentEmail = prompt("Enter a valid email address: ");
     }   
 
+    //asking the user how many modules they have
+    let moduleCount = parseFloat((prompt("How many modules would you like to add?: ")))
+
+    //collecting module data
+    let modules = [];
+
+    //loop through the modules added
+    for(let i = 0; i < moduleCount; i++){
+        let moduleName = prompt(`Enter the name of module ${i + 1}: `);
+        let finalMark = parseFloat(prompt(`Enter the final Mark for ${moduleName} (%): `))
+
+        //validate the final mark to be a number between 0 and 100
+        while(isNaN(finalMark) || finalMark < 0 || finalMark > 100){
+            console.log('❌ Invalid mark. Please enter a number between 0 and 100.');
+            finalMark = parseFloat(prompt(`Try again. Enter the final mark for ${moduleName}: `))
+        }
+    }
+
+
     let student = {
         firstName: studentName.trim(),
         surname: lastName.trim(),
@@ -38,5 +57,6 @@ while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
     }
 
     studentDetails.push(student)
-    console.log(studentDetails)
+    console.log(studentDetails);
+
 }
