@@ -59,11 +59,15 @@ while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
         firstName: studentName.trim(),
         surname: lastName.trim(),
         email: studentEmail.trim(),
-        studentId: studentNumber.trim()
+        studentId: studentNumber.trim(),
+        modules: modules
 
     }
 
     studentDetails.push(student)
-    console.log(studentDetails);
 
+    checkAgain = prompt('Do u want to add another student (yes/no): ')
 }
+
+ 
+    console.log(JSON.stringify(studentDetails, null, 2))
