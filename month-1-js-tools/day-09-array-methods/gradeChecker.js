@@ -45,9 +45,16 @@ while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
             console.log('❌ Invalid mark. Please enter a number between 0 and 100.');
             finalMark = parseFloat(prompt(`Try again. Enter the final mark for ${moduleName}: `))
         }
+
+        //push the modules to the array
+        modules.push({
+            moduleName: moduleName.trim(),
+            finalMark: finalMark
+        })
+
     }
 
-
+//creating the student object
     let student = {
         firstName: studentName.trim(),
         surname: lastName.trim(),
