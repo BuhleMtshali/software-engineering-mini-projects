@@ -15,9 +15,28 @@ while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
     const studentName = prompt("Enter your First Name: ")
     const lastName = prompt("Enter your last Name: ");
     const studentNumber = prompt("Enter your 9-digit Student Number: ");
+    let studentEmail = prompt("Enter your email address: ");
+
     //regex Triggers the while loop if it's NOT valid, keep looping until it's exactly 9 digits and numeric
     while(!/^\d{9}$/.test(studentNumber)){                   //This regex checks if the input has exactly 9 digits, nothing more, nothing less
         console.log('Invalid input. Please enter exactly 9 digits');
         studentNumber = prompt("Try again. Enter your 9-digit Student Number: ");
     }
+
+    // basic pattern: something@something.something for email
+    while (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(studentEmail)) {
+        console.log("❌ Invalid email format. Please try again.");
+        studentEmail = prompt("Enter a valid email address: ");
+    }   
+
+    let student = {
+        firstName: studentName.trim(),
+        surname: lastName.trim(),
+        email: studentEmail.trim(),
+        studentId: studentNumber.trim()
+
+    }
+
+    studentDetails.push(student)
+    console.log(studentDetails)
 }
