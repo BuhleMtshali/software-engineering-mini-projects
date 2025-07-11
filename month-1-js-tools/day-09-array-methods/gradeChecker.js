@@ -15,8 +15,8 @@ while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
     const studentName = prompt("Enter your First Name: ")
     const lastName = prompt("Enter your last Name: ");
     const studentNumber = prompt("Enter your 9-digit Student Number: ");
-    // keep looping until it's exactly 9 digits and numeric
-    while(!/^\d{9}$/.test(studentNumber)){
+    //regex Triggers the while loop if it's NOT valid, keep looping until it's exactly 9 digits and numeric
+    while(!/^\d{9}$/.test(studentNumber)){                   //This regex checks if the input has exactly 9 digits, nothing more, nothing less
         console.log('Invalid input. Please enter exactly 9 digits');
         studentNumber = prompt("Try again. Enter your 9-digit Student Number: ");
     }
