@@ -9,3 +9,26 @@ const hobby = ['gaming', 'coding', 'running', 'hiking', 'rock collecting', 'read
 function getRandom(array){
     return array[Math.floor(Math.random() * array.length)]
 }
+
+//function to generate the character
+function generateCharacter(){
+    const charName = getRandom(names)
+    const charTraits = getRandom(traits);
+    const charStrengths = getRandom(strength);
+    const charWeakness = getRandom(weakness);
+
+    return {
+        Name: charName,
+        Trait: charTraits,
+        Strength: charStrengths,
+        Weakness: charWeakness
+    }
+}
+
+//displaying the personalities
+const person = generateCharacter();
+console.log('----Your Random Personality Generator----')
+console.log(`Name: ${person.Name}`)
+console.log(`Trait: ${person.Trait}`)
+console.log(`Strength: ${person.Strength}`)
+console.log(`Weakeness: ${person.Weakness}`)
