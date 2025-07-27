@@ -1,24 +1,34 @@
 # 🚀 Full-Stack Dev Journey: 6-Month Roadmap Projects
 
-Welcome to my **Full-Stack JavaScript Developer Journey** 🚧  
+## Welcome to my **Full-Stack JavaScript Developer Journey** 🚧  
 This repo is my personal logbook of all the daily mini projects, built from scratch over a focused 6-month curriculum (July 1 – December 30).
 
 ## 🧠 What's Inside
 
 Each folder in this repo represents a **daily project** or **weekly capstone**—spanning everything from JavaScript fundamentals to AI integration using Python.
 
-Topics covered include:
+## Topics covered include:
 - ✅ JavaScript (Vanilla, ES6+)
+
 - ⚛️ React & TypeScript
+
 - 🔧 Node.js, Express, MongoDB, Prisma
+
 - 🌐 Next.js, Firebase, PostgreSQL
+
 - 🧪 Testing (Jest, Playwright, CI/CD)
+
 - 🐍 Python + Flask APIs
+
 - 🤖 OpenAI API, LLMs, AI Engineering
+
 - 📦 DevOps (GitHub Actions, Docker, Deployment)
+
 - 💼 Career Prep & Final Projects
 
+
 ## 📁 Folder Structure
+
 /month-1-js-tools/
 
     day-01-dev-setup/
@@ -37,7 +47,8 @@ Topics covered include:
 
 /month-6-capstones/
 
-Each project folder includes:
+## Each project folder includes:
+
 - `README.md` with project brief
 - Source code (`.js`, `.jsx`, `.ts`, `.py`, etc.)
 - Assets (if needed)
