@@ -53,14 +53,23 @@ It’s me vs. logic, loops, bugs, and the DOM — and spoiler alert: **I’m win
 ## 💫 Projects I’ll Be Building
 
 - 🎮 Console Quiz Game  
+
 - 🔢 FizzBuzz CLI  
+
 - 📦 Inventory Tracker  
+
 - 🧮 Vanilla JS Calculator  
+
 - 🐾 Dog API Viewer  
+
 - 🌍 Weather App  
+
 - 📝 Notes App  
+
 - 🧠 RPG Battle Sim  
+
 - 📋 To-do List  
+
 - 🧰 Personal Portfolio Landing Page
 
 ---
