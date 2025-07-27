@@ -46,9 +46,9 @@ Great for learning how to balance repeat(), spacing, and index logic.
 
 Output (height = 5):
 
-    #    
-   ###   
-  #####  
+    '# ' 
+  ' ###  '
+ ' #####  '
  ####### 
 #########
 
@@ -64,11 +64,11 @@ This one's a stairway to heaven — or at least to code clarity.
 🔥 Super simple but great for understanding loops and string multiplication.
 
 
-#
-##
-###
-####
-#####
+'#'
+'##'
+'###'
+'####'
+'#####'
 ... up to 12 rows
 
 
