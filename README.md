@@ -20,13 +20,21 @@ Topics covered include:
 
 ## 📁 Folder Structure
 /month-1-js-tools/
-day-01-dev-setup/
-day-02-js-basics/
+
+    day-01-dev-setup/
+
+    day-02-js-basics/
+
 ...
+
 /month-2-react-ts/
+
 /month-3-node-auth/
+
 /month-4-next-db-testing/
+
 /month-5-python-ai/
+
 /month-6-capstones/
 
 Each project folder includes:
