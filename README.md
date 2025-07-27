@@ -1,6 +1,6 @@
 # 🚀 Full-Stack Dev Journey: 6-Month Roadmap Projects
 
-## Welcome to my **Full-Stack JavaScript Developer Journey** 🚧  
+## Welcome to my **Full-Stack Software Engineering Journey** 🚧  
 This repo is my personal logbook of all the daily mini projects, built from scratch over a focused 6-month curriculum (July 1 – December 30).
 
 ## 🧠 What's Inside
