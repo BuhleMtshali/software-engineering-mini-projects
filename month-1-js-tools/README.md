@@ -10,12 +10,19 @@ It’s me vs. logic, loops, bugs, and the DOM — and spoiler alert: **I’m win
 ## 🎯 What I'm Doing This Month
 
 🚀 Building confidence in the **CLI**, Git, and GitHub  
+
 🧠 Mastering **JavaScript basics**: variables, loops, functions, arrays, and objects  
+
 📟 Messing with the **DOM** like a pro  
+
 🖱️ Handling **events**, **forms**, and **input**  
+
 🌐 Fetching real data from APIs  
+
 🛠️ Creating **mini-projects** to test my skills daily  
+
 🎨 Starting to sprinkle in **CSS responsiveness**  
+
 📂 Pushing everything to GitHub like a BOSS 😤
 
 ---
