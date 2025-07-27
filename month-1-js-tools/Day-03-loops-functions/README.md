@@ -46,9 +46,9 @@ Great for learning how to balance repeat(), spacing, and index logic.
 
 Output (height = 5):
 ```
-    '# ' 
-  ' ###  '
- ' #####  '
+    # 
+   ###  
+  #####  
  ####### 
 #########
 ```
@@ -61,6 +61,16 @@ A coding flex. Clean and centered like a Pinterest quote.
 for (let i = 1; i <= 12; i++) {
     console.log('#'.repeat(i));
 }
+```
+
+```
+#
+##
+###
+####
+#####
+... up to 12 rows
+
 ```
 
 ## 📚 Key Concepts Learned
