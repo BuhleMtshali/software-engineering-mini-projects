@@ -37,4 +37,5 @@ Feeling like a console queen 👑 — just me, my terminal, and some spicy strin
 ## 📁 File: quizGame.js
 
 📍 Directory: Day-02-variables
+
 🎉 Status: Complete & running smoothly!
