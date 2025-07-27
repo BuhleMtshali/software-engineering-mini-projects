@@ -45,32 +45,23 @@ for(let i = 1; i <= height; i++){
 Great for learning how to balance repeat(), spacing, and index logic.
 
 Output (height = 5):
-
+```
     '# ' 
   ' ###  '
  ' #####  '
  ####### 
 #########
+```
 
 A coding flex. Clean and centered like a Pinterest quote.
 
 ## 🧱 Mini Project 4: Left-Aligned Triangle
 
+```
 for (let i = 1; i <= 12; i++) {
     console.log('#'.repeat(i));
 }
-
-This one's a stairway to heaven — or at least to code clarity.
-🔥 Super simple but great for understanding loops and string multiplication.
-
-
-'#'
-'##'
-'###'
-'####'
-'#####'
-... up to 12 rows
-
+```
 
 ## 📚 Key Concepts Learned
 
