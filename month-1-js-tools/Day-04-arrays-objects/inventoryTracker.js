@@ -41,18 +41,24 @@ function inventoryFunction(){
                 let productCategory = prompt("Enter the product catergory: ");
                 let productPriceEach = parseFloat(prompt("How much is the product each in (R): "));
                 let productQuantity = parseInt(prompt("How many products are you adding: "));
+                let total = productQuantity * productPriceEach
 
                //creating the product object
                 let product = {
-                    pName: productName,
-                    pCatergory: productCategory,
-                    pPriceEach: productPriceEach,
-                    pQuantity: productQuantity
+                    pName: productName.trim(),
+                    pCatergory: productCategory.trim(),
+                    pPriceEach: productPriceEach.trim(),
+                    pQuantity: productQuantity.trim(),
+                    overallPrice: total.toFixed(2)
                 }
 
                 //pushing the product to the main array
                 inventoryArray.push(product);
 
+                //confirm its been added
+                console.log(`✅ Your ${productName} has been successfully added to the inventory list!`);
+                break;
+                
 
 
             default:
