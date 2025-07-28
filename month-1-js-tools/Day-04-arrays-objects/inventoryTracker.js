@@ -6,9 +6,12 @@ let inventoryArray = [];
 let welcomeMessage = "======== Welcome To My Mini Inventory Tracker🛒 =======";
 console.log(welcomeMessage)
 
+//let reTry
+let tryAgain = true;
+
 //main function
 function inventoryFunction(){
-    while(true){
+    while(tryAgain){
 
         //user options
         console.log("Please choose an Option Below: \n");
@@ -46,7 +49,7 @@ function inventoryFunction(){
                //creating the product object
                 let product = {
                     productName: pName.toLowerCase().trim(),
-                    productCategory: pCatergory.trim(),
+                    productCategory: pCatergory.toLowerCase().trim(),
                     productPriceEach: pPriceEach,
                     productQuantity: pQuantity,
                     overallPrice: total.toFixed(2)
@@ -97,17 +100,29 @@ function inventoryFunction(){
 
                 //decide what to show based on what the user returns
                 if(searchedItem.toLowerCase() === "name"){
-                    const searchByName = inventoryArray.filter(item => item.productName === s)
+                    const searchByName = inventoryArray.filter(item => item.productName === nameOfItem.toLowerCase());
+                    console.log(`=== 🍀Here is a list of items which match the name: ${nameOfItem} ====`)
+                    console.log(searchByName)
+                } else if(searchedItem.toLowerCase() === 'catergory'){
+                    const searchByCategory = inventoryArray.filter(item => item.productCategory === nameOfItem.toLowerCase())
+                    console.log(`=== 🌈Here is a list of items which match the name: ${nameOfItem} ====`);
+                    console.log(searchByCategory)
+                } else {
+                    console.log(`🚫${nameOfItem} unfortunately does not exist in the list, try adding it first`)
                 }
+                break;
 
-
-
+            case "5":
+                console.log('====== Thank you trying My Mini Inventory Tracker ======')
+                tryAgain = false;
+                break;
 
             default:
                 console.log('this is the default block');
                 break
-
         }
+
+
 
 
     }
