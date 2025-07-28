@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 
 //first defining the array that will hold the whole inventory
-let inventoryArray = [];
+let inventoryArray = [{name: 'buhle'}];
 
 let welcomeMessage = "======== Welcome To My Mini Inventory Tracker🛒 =======";
 console.log(welcomeMessage)
@@ -23,9 +23,36 @@ function inventoryFunction(){
 
         //start the switch statements
         switch(options){
+
+            //this is the first case of viewing the inventory list
             case "1":
-                console.log('i work')
-                break
+               if (inventoryArray.length <= 0){
+                console.log('Inventory list is currently empty for now, please try addin items first')
+               } else {
+                    inventoryArray.forEach((item) => {
+                    console.log(item)
+                 })
+               }
+               break;
+
+            //THIS IS FOR THE SECOND Case 2. Adding item to inventory
+            case "2":
+                let productName = prompt("Enter the product name: ");
+                let productCategory = prompt("Enter the product catergory: ");
+                let productPriceEach = parseFloat(prompt("How much is the product each in (R): "));
+                let productQuantity = parseInt(prompt("How many products are you adding: "));
+
+               //creating the product object
+                let product = {
+                    pName: productName,
+                    pCatergory: productCategory,
+                    pPriceEach: productPriceEach,
+                    pQuantity: productQuantity
+                }
+
+                //pushing the product to the main array
+                inventoryArray.push(product);
+
 
 
             default:
