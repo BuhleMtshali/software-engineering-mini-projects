@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --main-font: "Winky Rough", sans-serif;
+    --secondary-font: "Comic Relief", system-ui;
+    --lavender-pink: #FFDAFC;
+    --deep-charcoal: #222223;
+    --apricot-white: #FFFEEC;
+    --lavender: #BCB4FF;
+}
+
+*{
+    margin: 0;
+    font-family: var(--main-font);
+}
