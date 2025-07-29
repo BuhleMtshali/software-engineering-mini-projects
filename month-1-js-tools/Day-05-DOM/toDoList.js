@@ -48,6 +48,6 @@ function renderList(array){
         
         //append to the main list
         listWrapper.appendChild(listItem)
-        console.log(listItem)
+       
     })
 }
