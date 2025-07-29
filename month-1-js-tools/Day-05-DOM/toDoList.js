@@ -26,15 +26,28 @@ userInput.addEventListener('keydown', (e) => {
 //function for rendering the items
 function renderList(array){
     listWrapper.innerHTML = '';
-    
+
     array.forEach((item) => {
 
         //creating a new list item
         const listItem = document.createElement('li');
-        listItem.textContent = item
+
+        //creating the checkbox
+        const checkbox = document.createElement('input');
+        checkbox.setAttribute('type', 'checkbox');
+        checkbox.setAttribute('for', `checkbox-${item.replace(/\s/g, '')}`);
+
+        //creating a label
+        const label = document.createElement('label');
+        label.setAttribute('for', `checkbox-${item.replace(/\s/g, '')}`);
+        label.textContent = item;
         
+        //append the checkbox and label to the list item
+        listItem.appendChild(checkbox);
+        listItem.appendChild(label);
         
         //append to the main list
         listWrapper.appendChild(listItem)
+        console.log(listItem)
     })
 }
