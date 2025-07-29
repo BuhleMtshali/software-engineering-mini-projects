@@ -13,3 +13,41 @@
     margin: 0;
     font-family: var(--main-font);
 }
+
+body{
+    background-color: var(--deep-charcoal);
+}
+
+.container{
+   max-width: 500px;
+   margin:30px auto;
+   width: 100%;
+   height: auto;
+   border: 3px solid var(--lavender-pink);
+   border-radius: 50px;
+   padding: 20px;
+   color: var(--apricot-white);
+   text-align: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-log{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-log img{
+    width: 100%;
+    height: 100%;
+}
+
+header h1{
+    font-size: 4rem;
+}
