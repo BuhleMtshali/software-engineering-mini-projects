@@ -11,13 +11,27 @@ submitBtn.addEventListener('click', (e) => {
     let inputValue = userInput.value;
     listArray.push(inputValue);
     userInput.value = '';
-    console.log(listArray)
-
+    renderList(listArray)
 })
 
 //allowing 'enter' to submit
 userInput.addEventListener('keydown', (e) => {
     if(e.key === 'Enter'){
-        console.log('Enter was clicked');
+        submitBtn.click()
     }
 })
+
+
+//function for rendering the items
+function renderList(array){
+    array.forEach((item) => {
+
+        //creating a new list item
+        const listItem = document.createElement('li');
+
+        
+        
+        //append to the main list
+        listWrapper.appendChild(listItem)
+    })
+}
