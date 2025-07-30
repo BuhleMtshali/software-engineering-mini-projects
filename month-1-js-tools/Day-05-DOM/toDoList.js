@@ -40,6 +40,6 @@ function renderList(array){
                     </label>
                     `
             listWrapper.innerHTML = listItem;
-            console.log(item)
+            console.log(index)
     })
 }

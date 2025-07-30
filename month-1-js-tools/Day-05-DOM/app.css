@@ -115,9 +115,13 @@ main{
     font-size: 1.5rem;
     font-family: var(--secondary-font);
     display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: left;
-    gap: 8px; 
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px; 
 }
 
+label{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
