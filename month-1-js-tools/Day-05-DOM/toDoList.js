@@ -27,5 +27,8 @@ userInput.addEventListener('keydown', (e) => {
 function renderList(array){
     listWrapper.innerHTML = '';
 
-    
+    //grab items from the array
+    array.forEach((item) => {
+        console.log(item)
+    })
 }
