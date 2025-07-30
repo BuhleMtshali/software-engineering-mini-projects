@@ -24,11 +24,16 @@ userInput.addEventListener('keydown', (e) => {
 
 
 //function for rendering the items
+let listItem = '';
+
 function renderList(array){
     listWrapper.innerHTML = '';
-
     //grab items from the array
     array.forEach((item) => {
-        console.log(item)
+       listItem +=  `
+                    <input type="checkbox" class="checkbox-input" name="item-checkbox"/>
+                    <label for="item-checkbox">${item}</label>
+                    `
+            listWrapper.innerHTML = listItem;
     })
 }
