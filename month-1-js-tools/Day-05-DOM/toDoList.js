@@ -35,11 +35,30 @@ function renderList(array){
 
        listItem +=  `
                     <label>
-                    <input data-id="${index}" type="checkbox" class="checkbox-input" name="item-checkbox"/>
+                    <input id="item-${index}" type="checkbox" class="checkbox-input" name="item-checkbox" data-id="${index}"/>
                     ${item}
                     </label>
-                    `
+                    `;
+    })
             listWrapper.innerHTML = listItem;
-            console.log(index)
+
+            //getting each box
+            const taskCheckboxes = document.querySelectorAll(".checkbox-input");
+
+            taskCheckboxes.forEach((checkbox) => {
+                checkbox.addEventListener('change', (e) => {
+                     const label = e.target.parentElement;
+                     if(checkbox.checked){
+                        label.style.textDecoration = "line-through";
+                        listCount.textContent--;
+                        completedCount.textContent++;
+                     } else {
+                        label.style.textDecoration = "none";
+                        listCount.textContent++;
+                        completedCount.textContent--;
+                     }
+            
+            })
+        
     })
 }

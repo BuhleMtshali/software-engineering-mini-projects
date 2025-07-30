@@ -126,3 +126,7 @@ label{
     align-items: center;
     /*text-decoration: line-through;*/
 }
+
+.line-through{
+    text-decoration: line-through;
+}
