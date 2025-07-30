@@ -127,6 +127,19 @@ label{
     /*text-decoration: line-through;*/
 }
 
+.label-wrapper{
+    display: flex;
+    align-items: center;
+   gap: 30px;
+}
+
+ .delete-btns{
+    color: var(--lavender-pink);
+    font-weight: bold;
+    cursor:grab;
+    display: none;
+}
+
 .line-through{
     text-decoration: line-through;
 }

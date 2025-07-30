@@ -26,39 +26,53 @@ userInput.addEventListener('keydown', (e) => {
 })
 
 
-//function for rendering the items
-function renderList(array){
+function renderList(array) {
     listWrapper.innerHTML = '';
     let listItem = '';
-    //grab items from the array
+
     array.forEach((item, index) => {
-
-       listItem +=  `
-                    <label>
-                    <input id="item-${index}" type="checkbox" class="checkbox-input" name="item-checkbox" data-id="${index}"/>
+        listItem += `
+            <div class="label-wrapper">
+                <label>
+                    <input id="${index}" type="checkbox" class="checkbox-input" name="item-checkbox" data-id="${index}"/>
                     ${item}
-                    </label>
-                    `;
-    })
-            listWrapper.innerHTML = listItem;
+                </label>
+                <span class="material-symbols-outlined delete-btns" data-id="${index}">delete</span>
+            </div>
+        `;
+    });
 
-            //getting each box
-            const taskCheckboxes = document.querySelectorAll(".checkbox-input");
+    listWrapper.innerHTML = listItem;
 
-            taskCheckboxes.forEach((checkbox) => {
-                checkbox.addEventListener('change', (e) => {
-                     const label = e.target.parentElement;
-                     if(checkbox.checked){
-                        label.style.textDecoration = "line-through";
-                        listCount.textContent--;
-                        completedCount.textContent++;
-                     } else {
-                        label.style.textDecoration = "none";
-                        listCount.textContent++;
-                        completedCount.textContent--;
-                     }
-            
-            })
-        
-    })
+    // Add event listeners for delete buttons
+    const deleteBtns = document.querySelectorAll(".delete-btns");
+    deleteBtns.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            const id = parseInt(e.target.dataset.id); // get the item index
+            array.splice(id, 1); // remove the item from the array
+            renderList(array); // re-render the updated list
+        });
+    });
+
+    // Add event listeners for checkboxes
+    const taskCheckboxes = document.querySelectorAll(".checkbox-input");
+    taskCheckboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', (e) => {
+            const label = e.target.parentElement;
+
+            if (checkbox.checked) {
+                label.style.textDecoration = "line-through";
+                listCount.textContent--;
+                completedCount.textContent++;
+
+                if (parseInt(listCount.textContent) === 0) {
+                    alert('Hooray!! you finished all your tasks!!!');
+                }
+            } else {
+                label.style.textDecoration = "none";
+                listCount.textContent++;
+                completedCount.textContent--;
+            }
+        });
+    });
 }
