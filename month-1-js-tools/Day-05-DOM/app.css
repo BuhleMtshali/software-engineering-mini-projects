@@ -94,12 +94,10 @@ main{
     color: var(--lavender );
 }
 
-.list-wrapper{
+/*.list-wrapper{
     margin: 40px 0;
     text-align: left;
     font-size: 1.5rem;
     font-family: var(--secondary-font);
-    list-style: none;
-    
-}
+}*/
 
