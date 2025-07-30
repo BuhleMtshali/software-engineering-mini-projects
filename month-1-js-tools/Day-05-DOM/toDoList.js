@@ -30,8 +30,8 @@ function renderList(array){
     //grab items from the array
     array.forEach((item) => {
        listItem +=  `
-                    <label for="item-checkbox">${item}</label>
                     <input type="checkbox" class="checkbox-input" name="item-checkbox"/>
+                    <label for="item-checkbox">${item}</label>
                     `
             listWrapper.innerHTML = listItem;
     })

@@ -61,8 +61,14 @@ main{
     margin: 50px auto;
 }
 
+.count-wrapper{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .input-wrapper{
-    max-width: 90%;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -94,10 +100,14 @@ main{
     color: var(--lavender );
 }
 
-/*.list-wrapper{
-    margin: 40px 0;
-    text-align: left;
+.list-wrapper{
+    margin: 40px auto;
     font-size: 1.5rem;
     font-family: var(--secondary-font);
-}*/
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 8px; 
+}
 
