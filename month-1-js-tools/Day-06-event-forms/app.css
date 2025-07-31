@@ -22,8 +22,94 @@ body{
     max-width: 600px;
     width: 100%;
     height: auto;
-    border: 3px solid var(--lavender);
+    border: 5px solid var(--pink);
     margin: 30px auto;
     padding: 30px;
     text-align: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo-wrapper{
+    width: 90px;
+    height: 90px;
+    
+}
+
+header .logo-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+header h1{
+    font-size: 3.5rem;
+    color: var(--apricot-white);
+}
+
+form{
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form h2{
+    font-size: 2.2rem;
+    color: var(--pink);
+}
+
+::placeholder{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+:focus{
+    outline: 2px solid var(--pink);
+}
+
+form label{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 700;
+    color: var(--lavender);
+}
+
+form input{
+    padding: 15px;
+}
+
+textarea{
+   height: 110px;
+   resize: none;
+   max-width: 500px;
+   width: 100%;
+}
+
+#submit-btn{
+    max-width: 100px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: var(--pink);
+    color: var(--apricot-white);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#submit-btn:hover{
+    background-color: var(--apricot-white);
+    border: 3px solid var(--pink);
+    color: var(--pink);
 }
