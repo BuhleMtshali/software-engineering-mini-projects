@@ -4,7 +4,26 @@
     --main-font: "Winky Rough", sans-serif;
     --secondary-font: "Comic Relief", system-ui;
     --bg-color: #222223;
-    --blue: #9DC4D5;
+    --lavender: #BCB4FF;
     --apricot-white: #FFFEEC;
-    --lime-green: #EBFF40;
+    --pink: #E22797;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+*{
+    font-family: var(--main-font);
+    margin: 0;
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--lavender);
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
 }
