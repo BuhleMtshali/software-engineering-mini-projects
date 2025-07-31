@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --main-font: "Winky Rough", sans-serif;
+    --secondary-font: "Comic Relief", system-ui;
+    --bg-color: #222223;
+    --blue: #9DC4D5;
+    --apricot-white: #FFFEEC;
+    --lime-green: #EBFF40;
+}
