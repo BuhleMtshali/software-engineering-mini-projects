@@ -1,1 +1,1 @@
-console.log('this is just a placeholder for now')
+const prompt = require('prompt-sync')();
