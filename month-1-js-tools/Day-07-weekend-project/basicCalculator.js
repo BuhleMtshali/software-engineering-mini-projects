@@ -38,9 +38,33 @@ function mainCalculator(){
    let calculateAgain = "yes";
 
    while(calculateAgain.toLocaleLowerCase() === "yes"){
-    console.log("this is my loop")
+    console.log("Let's start calculating")
+    
+    let num1 = parseFloat(prompt("Enter your first number: "))
+    let operator = prompt("Choose an operator(+, *, /, -): ")
+    let num2 = parseFloat("Choose your second number: ")
 
 
+    switch(operator){
+        case "+":
+            output = myCalculator.addMethod(num1, num2);
+            break;
+        case "-":
+            output = myCalculator.minusMethod(num1, num2);
+            break;
+        case "*":
+            output = myCalculator.multiplyMethod(num1, num2);
+            break;
+        case "/":
+            output = myCalculator.divideMethod(num1, num2);
+            break;
+        default:
+            output = "Invalid operator chosen"
+            break;
+    }
+
+    console.log(`Results: ${output}`)
+    
     calculateAgain = prompt("\nWanna make another calculation(yes/no): ")
         if (calculateAgain.toLocaleLowerCase() === "no"){
         console.log("thank you for trying my Mini Calculator")
