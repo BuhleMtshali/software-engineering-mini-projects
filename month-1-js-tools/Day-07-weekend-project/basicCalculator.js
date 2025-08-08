@@ -65,7 +65,7 @@ function mainCalculator(){
 
     console.log(`Results: ${output}`)
 
-    calculateAgain = prompt("\nWanna make another calculation(yes/no): ")
+    calculateAgain = prompt("Wanna make another calculation(yes/no): ")
         if (calculateAgain.toLocaleLowerCase() === "no"){
         console.log("thank you for trying my Mini Calculator")
      }
