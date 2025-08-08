@@ -27,6 +27,14 @@ class Calculator{
     }
 }
 
+let output = 0;
 
-const myCalculator = new Calculator();
+function mainCalculator(){
+    const myCalculator = new Calculator();
 
+    output = myCalculator.addMethod(4, 5)
+    console.log(output)
+}
+
+
+mainCalculator()
