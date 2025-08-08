@@ -32,9 +32,23 @@ let output = 0;
 function mainCalculator(){
     const myCalculator = new Calculator();
 
-    //output = myCalculator.addMethod(4, 5)
-    console.log(myCalculator.addMethod(4, 5))
-    console.log(myCalculator.multiplyMethod(3, 9))
+    let welcomeMessage = "======== Welcome to My Modulated Mini Calculator🍀 =======";
+    console.log(welcomeMessage)
+
+   let calculateAgain = "yes";
+
+   while(calculateAgain.toLocaleLowerCase() === "yes"){
+    console.log("this is my loop")
+
+
+    calculateAgain = prompt("\nWanna make another calculation(yes/no): ")
+        if (calculateAgain.toLocaleLowerCase() === "no"){
+        console.log("thank you for trying my Mini Calculator")
+     }
+   }
+
+   
+    
 }
 
 
