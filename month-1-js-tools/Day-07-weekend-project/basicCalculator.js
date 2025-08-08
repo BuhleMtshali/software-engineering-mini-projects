@@ -42,7 +42,7 @@ function mainCalculator(){
     
     let num1 = parseFloat(prompt("Enter your first number: "))
     let operator = prompt("Choose an operator(+, *, /, -): ")
-    let num2 = parseFloat("Choose your second number: ")
+    let num2 = parseFloat(prompt("Choose your second number: "))
 
 
     switch(operator){
@@ -64,7 +64,7 @@ function mainCalculator(){
     }
 
     console.log(`Results: ${output}`)
-    
+
     calculateAgain = prompt("\nWanna make another calculation(yes/no): ")
         if (calculateAgain.toLocaleLowerCase() === "no"){
         console.log("thank you for trying my Mini Calculator")
