@@ -32,4 +32,3 @@ const passwordGenerator = createPasswordGenerator(length, includeSymbols);
 // Generate password using the closure
 console.log("\nHere’s your password: " + passwordGenerator());
 console.log("Another one? " + passwordGenerator());
-console.log("finishedz")
