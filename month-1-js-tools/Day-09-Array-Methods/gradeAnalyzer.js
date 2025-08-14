@@ -10,4 +10,14 @@ class Student{
         this.studentNumber = studentNumber
         this.grade = grade
     }
+
+    addStudent(){
+       let studentWrapper = {
+            studentName: this.name,
+            idNumber: this.studentNumber,
+            studentGrade: this.grade
+        }
+        gradeArray.push(studentWrapper);
+        console.log(`✅ student succeeffuly logged`)
+    }
 }
