@@ -22,6 +22,6 @@ class Student{
     }
 }
 
-const student = new Student('Jane', '989234', 89)
+const student = new Student('Jane', 989234, 89)
 student.addStudent()
 console.log(student)
