@@ -25,7 +25,7 @@ class Student{
 function logStudent(){
     const student = new Student('Zano', 9823423, 76);
     student.addStudent();
-    console.log(student);
+    console.log(gradeArray);
 }
 
 logStudent()
