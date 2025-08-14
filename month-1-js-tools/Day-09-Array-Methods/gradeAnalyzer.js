@@ -21,3 +21,7 @@ class Student{
         console.log(`✅ student succeeffuly logged`)
     }
 }
+
+const student = new Student('Jane', '989234', 89)
+student.addStudent()
+console.log(student)
