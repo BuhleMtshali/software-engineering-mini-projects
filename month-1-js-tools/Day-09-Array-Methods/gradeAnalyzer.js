@@ -22,6 +22,10 @@ class Student{
     }
 }
 
-const student = new Student('Jane', 989234, 89)
-student.addStudent()
-console.log(student)
+function logStudent(){
+    const student = new Student('Zano', 9823423, 76);
+    student.addStudent();
+    console.log(student);
+}
+
+logStudent()
