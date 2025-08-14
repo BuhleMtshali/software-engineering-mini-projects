@@ -5,15 +5,14 @@ const gradeArray = [];
 
 
 class Student{
-    constructor(name, studentNumber, module, grade){
+    constructor(name, studentNumber, studentModule, grade){
         this.name = name
         this.studentNumber = studentNumber,
-        this.module = module,
+        this.module = studentModule,
         this.grade = grade
     }
 
     addStudent(){
-        if(this.name.length() > 0 && Number.isInteger(this.grade)){
             let studentWrapper = {
             studentName: this.name,
             idNumber: this.studentNumber,
@@ -22,21 +21,18 @@ class Student{
         }
             gradeArray.push(studentWrapper);
             console.log(`✅ student succeeffuly logged`)
-        } else {
-            console.log("🚫 Student cannot be added")
         }
        
     }
-}
+
 
 function logStudent(){
     let studentName = prompt("Enter your name: ");
     let studentNumber = parseFloat(prompt("Enter your student number: "));
+    let module = prompt("Enter the name of you module: ");
     let studentGrade = parseFloat(prompt("Enter your grade: "));
 
-
-
-    const student = new Student('Zano', 9823423, 76);
+    const student = new Student(studentName, studentNumber, module, studentGrade);
     student.addStudent();
     console.log(gradeArray);
 }
