@@ -20,7 +20,9 @@ class Student{
             studentGrade: this.grade
         }
             gradeArray.push(studentWrapper);
-            console.log(`✅ student succeeffuly logged`)
+            if(studentWrapper.studentGrade >= 80){
+                console.log("You got an A+")
+            }
         }
        
     }
