@@ -22,6 +22,8 @@ class Student{
             gradeArray.push(studentWrapper);
             if(studentWrapper.studentGrade >= 80){
                 console.log("You got an A+")
+            } else if(studentWrapper.studentGrade >= 70){
+                console.log("You got a B")
             }
         }
        
@@ -36,7 +38,7 @@ function logStudent(){
 
     const student = new Student(studentName, studentNumber, module, studentGrade);
     student.addStudent();
-    console.log(gradeArray);
+    //console.log(gradeArray);
 }
 
 logStudent()
