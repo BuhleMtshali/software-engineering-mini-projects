@@ -26,6 +26,8 @@ class Student{
                 console.log("You got a B")
             } else if(studentWrapper.studentGrade >= 60){
                 console.log("You got a B -")
+            } else if(studentWrapper.studentGrade >= 50){
+                 console.log("wow right on the line")
             }
         }
        
