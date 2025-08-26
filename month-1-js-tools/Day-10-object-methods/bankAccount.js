@@ -11,12 +11,14 @@ class Bank{
     //METHOD TO GET BALANCE
     getBalance(){
         return this.balance;
+        console.log(`Your balance: ${this.balance}`)
     }
 
     //DEPOSIT MONEY
     deposit(depositAmount){
         if(depositAmount > 0){
-            return this.balance + depositAmount;
+            return this.balance += depositAmount;
+            console.log(`✅ successsfuly deposited amount, new balance: ${this.balance}`)
         } else {
             console.log("🚫 Invalid amount")
         }
@@ -35,8 +37,8 @@ class Bank{
 
 //MAIN FUNCTION
 function transactions(){
-    const bank = new Bank();
-    bank.balance()
+    const bank = new Bank("Buhle", 12345, 4321, "Savings", 1000);
+    bank.deposit(500)
 }
 
 transactions()
