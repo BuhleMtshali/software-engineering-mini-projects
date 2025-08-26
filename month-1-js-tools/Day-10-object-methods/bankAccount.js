@@ -10,14 +10,14 @@ class Bank{
 
     //METHOD TO GET BALANCE
     getBalance(){
-        return this.balance;
+        this.balance;
         console.log(`Your balance: ${this.balance}`)
     }
 
     //DEPOSIT MONEY
     deposit(depositAmount){
         if(depositAmount > 0){
-            return this.balance += depositAmount;
+           this.balance += depositAmount;
             console.log(`✅ successsfuly deposited amount, new balance: ${this.balance}`)
         } else {
             console.log("🚫 Invalid amount")
@@ -27,7 +27,7 @@ class Bank{
     //WITHDRAW AMOUNT
     withdraw(withdrawAmount){
         if(this.balance >= withdrawAmount){
-            return this.balance -= withdrawAmount
+          this.balance -= withdrawAmount
             console.log(`✅ Successfully withdraw from account, balance R${this.balance}`)
         } else {
             console.log("🚫 Insufficient amount")
