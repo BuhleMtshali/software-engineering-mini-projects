@@ -27,6 +27,13 @@ class Bank{
         if(this.balance > withdrawAmount){
             return this.balance - withdrawAmount
             console.log(`✅ Successfully withdraw from account, balance R${this.balance}`)
+        } else {
+            console.log("🚫 Insufficient amount")
         }
     }
+}
+
+//MAIN FUNCTION
+function transactions(){
+    const bank = new Bank("Buhle", "123454", "savings", "2321", 10000);
 }
