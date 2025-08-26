@@ -35,5 +35,8 @@ class Bank{
 
 //MAIN FUNCTION
 function transactions(){
-    const bank = new Bank("Buhle", "123454", "savings", "2321", 10000);
+    const bank = new Bank();
+    bank.balance()
 }
+
+transactions()
