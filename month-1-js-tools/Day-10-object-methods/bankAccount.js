@@ -46,7 +46,7 @@ function transactions(){
 
 
     const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
-    bank.deposit(500)
+    console.log(`Your name: ${bank.name}`);
 }
 
 transactions();
