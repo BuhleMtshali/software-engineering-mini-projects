@@ -47,6 +47,8 @@ function transactions(){
 
     const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
     console.log(`Your name: ${bank.name}`);
+    console.log(`Account Number: ${bank.accountNumber}`)
+    console.log(`Account Type: ${bank.accountType}`)
 }
 
 transactions();
