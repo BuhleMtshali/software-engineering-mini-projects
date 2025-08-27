@@ -37,6 +37,10 @@ class Bank{
 
 //MAIN FUNCTION
 function transactions(){
+    console.log("-------- Welcome to my Mini Bank App🏧 ------")
+    let name = prompt("Enter you name: ")
+
+
     const bank = new Bank("Buhle", 12345, 4321, "Savings", 1000);
     bank.deposit(500)
 }
