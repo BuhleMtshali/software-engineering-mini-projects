@@ -39,9 +39,13 @@ class Bank{
 function transactions(){
     console.log("-------- Welcome to my Mini Bank App🏧 ------")
     let name = prompt("Enter you name: ")
+    let accountNumber = prompt("Enter your account number: ");
+    let accountType = prompt("Choose your account type (cheque, savings, credit): ")
+    let pin = prompt("Enter your pin: ");
+    let openingBalance = parseFloat(prompt("Enter the amount you want to open your account with: "))
 
 
-    const bank = new Bank("Buhle", 12345, 4321, "Savings", 1000);
+    const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
     bank.deposit(500)
 }
 
