@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 //CREATING CLASS FOR BANK
 class Bank{
     constructor(name, accountNumber, pin, accountType, balance){
