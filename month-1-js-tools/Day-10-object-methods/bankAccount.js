@@ -49,15 +49,22 @@ function transactions(){
     //start loop
     let transactAgain = "yes";
 
-    while(transactAgain.toLocaleLowerCase() === "yes"){}
-    console.log(`Thank you for registering your information ${name}!`)
+    while(transactAgain.toLocaleLowerCase() === "yes"){
+        console.log(`Thank you for registering your information ${name}!`)
 
-    const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
-    console.log(`Your name: ${name}`);
-    console.log(`Account Number: ${accountNumber}`)
-    console.log(`Account Type: ${accountType}`)
-    console.log(`Pin: ${pin}`)
-    console.log(`Opening Balance: ${openingBalance}`)
+        const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
+        console.log(`Your name: ${name}`);
+        console.log(`Account Number: ${accountNumber}`)
+        console.log(`Account Type: ${accountType}`)
+        console.log(`Pin: ${pin}`)
+        console.log(`Opening Balance: ${openingBalance}`)
+
+        //closing the loop
+        transactAgain = prompt("Wanna make another transaction (yes/no): ")
+        if(transactAgain.toLocaleLowerCase() === 'no'){
+            console.log(`Thank you for trying my mini bank ${name}`)
+        }
+    }
 }
 
 transactions();
