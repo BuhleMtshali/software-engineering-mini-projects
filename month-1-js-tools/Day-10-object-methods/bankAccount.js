@@ -45,15 +45,15 @@ function transactions(){
     let accountType = prompt("Choose your account type (cheque, savings, credit): ")
     let pin = prompt("Enter your pin: ");
     let openingBalance = parseFloat(prompt("Enter the amount you want to open your account with: "))
+    
+    //creating the bank object
 
+    const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
     //start loop
     let transactAgain = "yes";
 
     while(transactAgain.toLocaleLowerCase() === "yes"){
         console.log(`Thank you for registering your information ${name}!`)
-
-        const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
-
         console.log(`\n======== ACCOUNT DETAILS FOR: ${name}🍀 =======\n`)
         console.log(`\nYour name: ${name}`);
         console.log(`\nAccount Number: ${accountNumber}`)
@@ -78,7 +78,13 @@ function transactions(){
             case "2":
                 let deposit = parseFloat(prompt("Enter the amount you want to deposit: "))
                 bank.deposit(deposit)
+                break;
+            case "3":
+                let withdraw = parseFloat(prompt("Enter the amount you want to withdraw: "))
+                bank.withdraw(withdraw);
+                break
             default:
+                console.log(`invalid operator, please try again`)
                 break;
         }
 
