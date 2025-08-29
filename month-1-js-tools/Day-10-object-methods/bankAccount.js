@@ -60,6 +60,15 @@ function transactions(){
         console.log(`Pin: ${pin}`)
         console.log(`Opening Balance: ${openingBalance}`)
 
+        //starting the options
+        console.log(`\nPlease select an option below: `)
+
+        console.log('1. View Balance')
+        console.log('2. Deposit Money')
+        console.log('3. Withdraw Money')
+        console.log('4. Exit')
+
+
         //closing the loop
         transactAgain = prompt("Wanna make another transaction (yes/no): ")
         if(transactAgain.toLocaleLowerCase() === 'no'){
