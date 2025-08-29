@@ -48,6 +48,8 @@ function transactions(){
 
     //start loop
     let transactAgain = "yes";
+
+    while(transactAgain.toLocaleLowerCase() === "yes"){}
     console.log(`Thank you for registering your information ${name}!`)
 
     const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
