@@ -13,7 +13,7 @@ class Bank{
     //METHOD TO GET BALANCE
     getBalance(){
         this.balance;
-        console.log(`Your balance: ${this.balance}`)
+        console.log(`✅ Your balance: ${this.balance}`)
     }
 
     //DEPOSIT MONEY
@@ -75,7 +75,9 @@ function transactions(){
             case "1":
                 bank.getBalance()
                 break;
-        
+            case "2":
+                let deposit = parseFloat(prompt("Enter the amount you want to deposit: "))
+                bank.deposit(deposit)
             default:
                 break;
         }
