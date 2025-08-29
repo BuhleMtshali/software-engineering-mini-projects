@@ -46,6 +46,7 @@ function transactions(){
     let pin = prompt("Enter your pin: ");
     let openingBalance = parseFloat(prompt("Enter the amount you want to open your account with: "))
 
+    console.log(`Thank you for registering your information ${name}!`)
 
     const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
     console.log(`Your name: ${name}`);
