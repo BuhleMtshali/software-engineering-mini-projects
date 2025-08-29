@@ -53,6 +53,7 @@ function transactions(){
         console.log(`Thank you for registering your information ${name}!`)
 
         const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
+
         console.log(`\n======== ACCOUNT DETAILS FOR: ${name}🍀 =======\n`)
         console.log(`\nYour name: ${name}`);
         console.log(`\nAccount Number: ${accountNumber}`)
@@ -68,6 +69,16 @@ function transactions(){
 
         //CHOOSING THE OPTION
         const options = prompt('\nPlease select an option: ')
+
+        //switch options
+        switch (options) {
+            case "1":
+                bank.getBalance()
+                break;
+        
+            default:
+                break;
+        }
 
 
         //closing the loop
