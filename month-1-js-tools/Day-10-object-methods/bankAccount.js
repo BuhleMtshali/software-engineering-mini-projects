@@ -43,18 +43,29 @@ function transactions(){
 
     //VALIDATING THE NAME
     let name = "";
-    while(name.length() > 0){
-        name = prompt("Enter you name: ");
-        if(name.length() < 0){
-            console.log(`${name} is too short, please try again`)
+    while (name === "") {
+        name = prompt("Enter your name: ");
+        if (name === "") console.log("🚫 Name is required!");
+    }
+
+    let accountNumber = "";
+    while (accountNumber === "" || isNaN(accountNumber)) {
+        accountNumber = prompt("Enter your account number: ");
+        if (accountNumber === "" || isNaN(accountNumber)) {
+            console.log("🚫 Invalid account number!");
+        }
+    }
+
+    let pin = "";
+    while (pin.length !== 4 || isNaN(pin)) {
+        pin = prompt("Enter a 4-digit PIN: ");
+        if (pin.length !== 4 || isNaN(pin)) {
+            console.log("🚫 Invalid PIN! Must be 4 numbers.");
         }
     }
 
 
-
-    let accountNumber = prompt("Enter your account number: ");
     let accountType = prompt("Choose your account type (cheque, savings, credit): ")
-    let pin = prompt("Enter your pin: ");
     let openingBalance = parseFloat(prompt("Enter the amount you want to open your account with: "))
     
     //creating the bank object
