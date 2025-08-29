@@ -49,10 +49,11 @@ function transactions(){
     }
 
     let accountNumber = "";
+
     while (accountNumber === "" || isNaN(accountNumber)) {
         accountNumber = prompt("Enter your account number: ");
         if (accountNumber === "" || isNaN(accountNumber)) {
-            console.log("🚫 Invalid account number!");
+            console.log("🚫 Invalid account number! Please enter digits only.");
         }
     }
 
