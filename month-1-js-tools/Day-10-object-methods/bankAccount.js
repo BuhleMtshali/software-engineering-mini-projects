@@ -54,11 +54,11 @@ function transactions(){
 
         const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
         console.log(`\n======== ACCOUNT DETAILS FOR: ${name}🍀 =======\n`)
-        console.log(`Your name: ${name}`);
-        console.log(`Account Number: ${accountNumber}`)
-        console.log(`Account Type: ${accountType}`)
-        console.log(`Pin: ${pin}`)
-        console.log(`Opening Balance: ${openingBalance}`)
+        console.log(`\nYour name: ${name}`);
+        console.log(`\nAccount Number: ${accountNumber}`)
+        console.log(`\nAccount Type: ${accountType}`)
+        console.log(`\nPin: ${pin}`)
+        console.log(`\nOpening Balance: ${openingBalance}`)
 
         //starting the options=
         console.log('\n1. View Balance')
