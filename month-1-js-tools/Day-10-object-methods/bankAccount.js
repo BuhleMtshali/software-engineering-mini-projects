@@ -61,13 +61,13 @@ function transactions(){
         console.log(`Opening Balance: ${openingBalance}`)
 
         //starting the options=
-        console.log('1. View Balance')
-        console.log('2. Deposit Money')
-        console.log('3. Withdraw Money')
-        console.log('4. Exit')
+        console.log('\n1. View Balance')
+        console.log('\n2. Deposit Money')
+        console.log('\n3. Withdraw Money')
+        console.log('\n4. Exit')
 
         //CHOOSING THE OPTION
-        const options = prompt('Please select an option: ')
+        const options = prompt('\nPlease select an option: ')
 
 
         //closing the loop
