@@ -40,7 +40,18 @@ class Bank{
 //MAIN FUNCTION
 function transactions(){
     console.log("-------- Welcome to my Mini Bank App🏧 ------")
-    let name = prompt("Enter you name: ")
+
+    //VALIDATING THE NAME
+    let name = "";
+    while(name.length() > 0){
+        name = prompt("Enter you name: ");
+        if(name.length() < 0){
+            console.log(`${name} is too short, please try again`)
+        }
+    }
+
+
+
     let accountNumber = prompt("Enter your account number: ");
     let accountType = prompt("Choose your account type (cheque, savings, credit): ")
     let pin = prompt("Enter your pin: ");
