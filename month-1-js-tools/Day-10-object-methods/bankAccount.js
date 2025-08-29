@@ -53,7 +53,7 @@ function transactions(){
         console.log(`Thank you for registering your information ${name}!`)
 
         const bank = new Bank(name, accountNumber, accountType, pin, openingBalance);
-        console.log(`\n======== ACCOUNT DETAILS FOR: ${name}🍀 =======`)
+        console.log(`\n======== ACCOUNT DETAILS FOR: ${name}🍀 =======\n`)
         console.log(`Your name: ${name}`);
         console.log(`Account Number: ${accountNumber}`)
         console.log(`Account Type: ${accountType}`)
