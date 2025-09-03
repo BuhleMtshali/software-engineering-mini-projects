@@ -9,11 +9,13 @@ const prompt = PromptSync();
 const apiKey = process.env.API_KEY;
 console.log('Apikey_length', apiKey?.length)
 
+let urlRequest = prompt("Enter url you want to check: ")
+
 const options = {
   method: 'GET',
-  url: 'https://malicious-scanner.p.rapidapi.com/rapid/url',
+  url: "https://malicious-scanner.p.rapidapi.com/rapid/url",
   params: {
-    url: 'https://vryjm.page.link/jS6a'
+    url: urlRequest,
   },
   headers: {
     'x-rapidapi-key': `${apiKey}`,
