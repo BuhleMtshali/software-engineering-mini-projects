@@ -16,7 +16,7 @@ const options = {
     url: 'https://vryjm.page.link/jS6a'
   },
   headers: {
-    'x-rapidapi-key': apiKey,
+    'x-rapidapi-key': `${apiKey}`,
     'x-rapidapi-host': 'malicious-scanner.p.rapidapi.com'
   }
 };
