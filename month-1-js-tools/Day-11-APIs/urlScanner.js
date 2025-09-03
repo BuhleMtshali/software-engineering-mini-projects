@@ -25,7 +25,12 @@ const options = {
 
 try {
 	const response = await axios.request(options);
-	console.log(response.data);
+  let results = response.data;
+	console.log("\n======== 👾 Log Results =======")
+  console.log(`URL🌐: ${results.url}`)
+  console.log(`Status: ${results.status}`)
+  console.log(`Outcome📂: ${results.message}`)
+  console.log('\n=========================================')
 } catch (error) {
 	console.error(error);
 }
