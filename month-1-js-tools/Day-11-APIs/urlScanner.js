@@ -26,11 +26,13 @@ const options = {
 try {
 	const response = await axios.request(options);
   let results = response.data;
-	console.log("\n======== 👾 Log Results =======")
-  console.log(`URL🌐: ${results.url}`)
-  console.log(`Status: ${results.status}`)
-  console.log(`Outcome📂: ${results.message}`)
-  console.log('\n=========================================')
+	
+console.log("\n======== 👾 Log Results =======");
+console.log(`\nURL 🌐 : ${results.data?.url || "N/A"}`);
+console.log(`\nStatus 📝 : ${results.data.status}`);
+console.log(`\nOutcome 📂 : ${results.data.message}`);
+console.log("\n=========================================");
+
 } catch (error) {
 	console.error(error);
 }
