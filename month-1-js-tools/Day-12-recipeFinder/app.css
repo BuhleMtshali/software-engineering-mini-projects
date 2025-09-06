@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+:root{
+    --font-family: "Comic Relief", system-ui;
+    --bg-color: #F6F5F1;
+    --green-text: #173B34;
+    --orange-color: #ECA780;
+}
+
+*{
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--green-text);
+}
