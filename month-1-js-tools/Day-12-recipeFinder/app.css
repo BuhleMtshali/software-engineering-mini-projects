@@ -90,3 +90,10 @@ header nav .browse-btn button:hover{
 header  .hamburger-menu{
     display: none;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
