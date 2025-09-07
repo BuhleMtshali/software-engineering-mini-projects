@@ -18,12 +18,18 @@ body{
 }
 
 .container{
-    padding: 0px;
+   padding: 0;
 }
 
 header{
-    background-color: red;
-    padding: 20px;
+    padding:20px 0;
+    border: 3px solid rebeccapurple;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header nav .logo{
@@ -48,4 +54,16 @@ header nav .logo .logo-img img{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+header nav .mid-nav{
+    display: flex;
+   gap: 50px;
+}
+
+header nav .mid-nav a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--green-text);
+    font-weight: 700;
 }
