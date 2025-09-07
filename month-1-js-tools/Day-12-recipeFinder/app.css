@@ -23,7 +23,7 @@ body{
 
 header{
     padding:20px 0;
-    border: 3px solid rebeccapurple;
+    border-bottom: 1px solid #E9E7E4;
 }
 
 header nav{
@@ -66,4 +66,23 @@ header nav .mid-nav a{
     font-size: 1.4rem;
     color: var(--green-text);
     font-weight: 700;
+    cursor: pointer;
+}
+
+header nav .browse-btn button{
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--green-text);
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav .browse-btn button:hover{
+    background-color: var(--bg-color);
+    color: var(--green-text);
+    border: 2px solid var(--green-text)
 }
