@@ -69,7 +69,7 @@ header nav .mid-nav a{
     cursor: pointer;
 }
 
-header nav .browse-btn button{
+ button.browse-btn {
     padding: 15px 20px;
     border-radius: 12px;
     border: none;
@@ -96,4 +96,23 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+}
+
+main .hero{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .hero .hero-heading{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main .hero .hero-para{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: 600;
 }
