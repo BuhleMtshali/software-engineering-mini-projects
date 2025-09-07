@@ -203,5 +203,44 @@ main .hero .hero-para{
 }
 
 .recipe-wrapper{
-    background-color: #ECA780;
+    margin-top: 30px;
+   
+}
+.top-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar input{
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid var(--green-text);
+    background-color: var(--bg-color);
+    max-width: 250px;
+    width: 100%;
+}
+.filter-btns{
+    display: flex;
+}
+
+label{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 220px;
+}
+
+select{
+    border: none;
+    color: var(--green-text);
+    
 }
