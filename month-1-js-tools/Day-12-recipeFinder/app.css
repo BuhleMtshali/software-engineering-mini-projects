@@ -121,3 +121,17 @@ main .hero .hero-para{
     display: flex;
     justify-content: center;
 }
+
+.hero-image{
+    width: 700px;
+    height: 500px;
+    margin-top: 40px;
+    border: 12px solid white;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
