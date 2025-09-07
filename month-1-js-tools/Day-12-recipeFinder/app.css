@@ -201,3 +201,7 @@ main .hero .hero-para{
 .left-text p:first-of-type{
     margin-bottom: 30px;
 }
+
+.recipe-wrapper{
+    background-color: #ECA780;
+}
