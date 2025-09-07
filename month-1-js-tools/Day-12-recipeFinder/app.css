@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root{
-    --font-family: "Comic Relief", system-ui;
+    --font-family: "Nunito", sans-serif;
     --bg-color: #F6F5F1;
     --green-text: #173B34;
     --orange-color: #ECA780;
