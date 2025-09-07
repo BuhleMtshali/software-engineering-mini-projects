@@ -18,6 +18,11 @@ body{
 }
 
 .container{
+    padding: 0px;
+}
+
+header{
+    background-color: red;
     padding: 20px;
 }
 
