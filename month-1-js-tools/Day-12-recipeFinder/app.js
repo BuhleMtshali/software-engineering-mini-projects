@@ -1,6 +1,6 @@
-//responsive navbar
-const hamburgerMenu = document.querySelector('.hamburger-menu')
+const hamburger = document.querySelector(".hamburger-menu");
+const midNav = document.querySelector(".mid-nav");
 
-hamburgerMenu.addEventListener('click', () => {
-    console.log("i'm the menu")
-})
+hamburger.addEventListener("click", () => {
+  midNav.classList.toggle("active");
+});

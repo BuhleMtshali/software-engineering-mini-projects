@@ -3,11 +3,36 @@
     header nav .hamburger-menu{
         display: flex;
     }
+/* Sidebar style for small screens */
+header nav .mid-nav {
+  transition: left 0.3s ease-in-out;
+}
 
-    header nav .mid-nav,
-    header nav .browse-btn button {
-        display: none;
-    }
+@media (max-width: 840px) {
+  header nav .mid-nav {
+    position: fixed;
+    top: 0;
+    left: -350px; /* hidden offscreen */
+    width: 250px;
+    height: 100%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  header nav .mid-nav.active {
+    left: 0; /* slide in */
+  }
+
+  header nav .browse-btn {
+    display: none; /* hide Browse btn on mobile */
+  }
+}
+
+
 }
 
 
