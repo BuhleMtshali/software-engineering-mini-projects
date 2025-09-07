@@ -1,5 +1,5 @@
 /* Small screens (phones) */
-@media (max-width: 639px) {
+@media (max-width: 840px) {
     header nav .hamburger-menu{
         display: flex;
     }
@@ -10,12 +10,9 @@
     }
 }
 
-/* Tablets */
-@media (min-width: 640px) and (max-width: 1023px) {
-  
+
+@media (min-width: 841px) {
+
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
-  
-}
+
