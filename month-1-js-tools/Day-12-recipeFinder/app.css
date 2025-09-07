@@ -98,10 +98,10 @@ main{
     padding: 20px 0;
 }
 
-main .hero{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.hero button.browse-btn{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
 }
 
 main .hero .hero-heading{
@@ -115,4 +115,9 @@ main .hero .hero-para{
     line-height: 30px;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
 }
