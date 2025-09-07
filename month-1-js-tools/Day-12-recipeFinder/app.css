@@ -86,3 +86,7 @@ header nav .browse-btn button:hover{
     color: var(--green-text);
     border: 2px solid var(--green-text)
 }
+
+header nav .hamburger-menu{
+    display: none;
+}
