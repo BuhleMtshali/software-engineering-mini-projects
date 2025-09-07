@@ -1,0 +1,21 @@
+/* Small screens (phones) */
+@media (max-width: 639px) {
+    header nav .hamburger-menu{
+        display: flex;
+    }
+
+    header nav .mid-nav,
+    header nav .browse-btn button {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media (min-width: 640px) and (max-width: 1023px) {
+  
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  
+}
