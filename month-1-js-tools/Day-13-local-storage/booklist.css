@@ -32,3 +32,31 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+#add-book{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: var(--olive-green);
+    color: var(--bg);
+    gap: 10px;
+    border: none;
+}
+
+#add-book span{
+    font-size: 1.5rem;
+    color: var(--bg);
+}
+
+#add-book span:hover{
+    color: var(--olive-green);
+}
+
+#add-book:hover{
+    border: 2px solid var(--olive-green);
+    color: var(--olive-green);
+    background-color: var(--cream-white);
+}
