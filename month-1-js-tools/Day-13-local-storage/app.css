@@ -100,3 +100,9 @@ input{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+
+#submit-btn:hover{
+    border: 2px solid var(--lavender);
+    color: var(--lavender);
+    background-color: var(--cream-white);
+}
