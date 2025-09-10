@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --bg: #222223;
+    --cream-white: #fffeec;
+    --lavender: #bcb4ff;
+    --olive-green: #cac426;
+    --font-family: "Balsamiq Sans", sans-serif;
+}
+
+*{
+    font-family: var(--font-family);
+    margin: 0;
+    color: var(--cream-white);
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.container{
+    padding: 20px;
+}
