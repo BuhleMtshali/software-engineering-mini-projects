@@ -34,6 +34,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .login-form h1{
@@ -73,6 +75,10 @@ body{
     font-size: 1.4rem;
 }
 
-#username{
-    padding: 12px;
+input{
+    padding: 15px;
+}
+
+::placeholder{
+    font-size: 1rem;
 }
