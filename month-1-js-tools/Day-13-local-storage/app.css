@@ -11,6 +11,7 @@
 *{
     font-family: var(--font-family);
     margin: 0;
+    color: var(--bg);
 }
 
 body{
@@ -37,4 +38,41 @@ body{
 
 .login-form h1{
     font-size: 3rem;
+}
+
+#book-logo-btn{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--lavender);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#book-logo-btn span{
+    font-size: 2.5rem;
+}
+
+.login-form p{
+    font-weight: 400;
+}
+
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80%;
+    width: 100%;
+}
+
+.login-form form label{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#username{
+    padding: 12px;
 }
