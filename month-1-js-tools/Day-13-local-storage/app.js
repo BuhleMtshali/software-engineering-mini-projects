@@ -3,17 +3,20 @@
 let loginForm = document.querySelector("#login")
 let userName = document.querySelector("#username").value.trim()
 
-if (userName){
+loginForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    if (userName){
 
     //THIS IS WHERE I SAVE TO LOCAL STORAGE
     localStorage.setItem("username", userName);
 
     //THIS REDIRECTS TO THE BOOKLIST.HTML
     window.location.href = "booklist.html";
-} else {
-    alert("🚫 Please enter your name!")
-}
+    } else {
+        alert("🚫 Please enter your name!")
+    }
 
+})
 
 // GETTING THE USERNAME
 let loggedInUser = localStorage.getItem("username")
