@@ -1,10 +1,12 @@
 
 // SETTING UP THE LOGIN PAGE
 let loginForm = document.querySelector("#login")
-let userName = document.querySelector("#username").value.trim()
 
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault()
+
+    let userName = document.querySelector("#username").value
+
     if (userName){
 
     //THIS IS WHERE I SAVE TO LOCAL STORAGE
@@ -21,11 +23,11 @@ loginForm.addEventListener("submit", (e) => {
 // GETTING THE USERNAME
 let loggedInUser = localStorage.getItem("username")
 
-if (!userName){
+if (!loggedInUser){
     //IF THERE ARE NO USERS WE SEND THEM BACK TO THE INDEX FILE
     window.location.href = "index.html";
 } else {
-    document.querySelector("#user").textContent = userName
+    document.querySelector("#user").textContent = loggedInUser
 }
 
 
