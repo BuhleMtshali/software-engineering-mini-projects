@@ -154,3 +154,31 @@ font-size: 1.2rem;
    flex-direction: column;
     gap: 10px;
 }
+
+.fa-xmark{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#add-book-form h2{
+    font-size: 2rem;
+    color: var(--olive-green);
+}
+
+#add-book-form input{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 2px solid var(--olive-green);
+    background-color: var(--cream-white);
+}
+
+#add-book-form input:focus{
+    border: none;
+    outline: 3px solid var(--lavender);
+}
+
+#add-book-form label{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
