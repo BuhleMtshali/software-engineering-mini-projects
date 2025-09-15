@@ -16,3 +16,12 @@ window.addEventListener("click", (event) => {
         modalWrapper.classList.remove("show-modal")
     }
 })
+
+
+// SETTING UP THE LOGIN PAGE
+let loginForm = document.querySelector("#login")
+let userName = document.querySelector("#username").value.trim()
+if (userName){
+    //THIS IS WHERE I SAVE TO LOCAL STORAGE
+    localStorage.setItem("username", userName);
+}

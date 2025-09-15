@@ -35,6 +35,8 @@ body{
 .container .top-bar{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .container .top-bar .left-side{
