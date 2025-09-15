@@ -29,6 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    position: relative;
 }
 
 .container .top-bar{
@@ -130,12 +131,21 @@ font-size: 1.2rem;
 .modal-wrapper{
     border: 3px solid var(--lavender);
     max-width: 400px;
-    max-width: 390px;
+    max-height: 390px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+   overflow: auto;
+    background-color: #2D2D2D;
 }
 
 .modal-form {
