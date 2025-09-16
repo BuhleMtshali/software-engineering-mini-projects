@@ -1,5 +1,5 @@
-
-// SETTING UP THE LOGIN PAGE
+document.addEventListener("DOMContentLoaded", () => {
+    // SETTING UP THE LOGIN PAGE
 let loginForm = document.querySelector("#login")
 
 loginForm.addEventListener("submit", (e) => {
@@ -27,7 +27,8 @@ if (!loggedInUser){
     //IF THERE ARE NO USERS WE SEND THEM BACK TO THE INDEX FILE
     window.location.href = "index.html";
 } else {
-    document.querySelector("#user").textContent = loggedInUser
+    let user = document.querySelector("#user")
+    user.textContent = loggedInUser;
 }
 
 
@@ -48,5 +49,7 @@ window.addEventListener("click", (event) => {
     if (event.target == modalWrapper){
         modalWrapper.classList.remove("show-modal")
     }
+})
+
 })
 
