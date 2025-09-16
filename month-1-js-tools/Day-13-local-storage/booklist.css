@@ -183,6 +183,7 @@ font-size: 1.2rem;
     border-radius: 12px;
     border: 2px solid var(--olive-green);
     background-color: var(--cream-white);
+    color: var(--bg);
 }
 
 #add-book-form input:focus{
