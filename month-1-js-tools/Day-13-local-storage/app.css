@@ -3,6 +3,10 @@
 :root{
     --font-family: 'Balsamiq Sans', cursive;
     --font-family-main: 'Winky Sans', cursive;
+    --main-bg: #222223;
+    --lavender-color: #bcb4ff;
+    --white-color: #fffeec;
+    --green-color: #cac426;
 }
 
 *{
@@ -10,4 +14,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family-main);
+}
+
+body{
+    background-color: var(--main-bg);
+    color: var(--white-color);
+    padding: 20px;
+}
+
+.container{
+    margin: auto;
+    background-color: var(--main-bg);
+    padding: 20px;
 }
