@@ -6,7 +6,7 @@
     --main-bg: #222223;
     --lavender-color: #bcb4ff;
     --white-color: #fffeec;
-    --green-color: #cac426;
+    --green-color: #A4C401;
 }
 
 *{
@@ -58,4 +58,43 @@ nav{
     font-family: var(--font-family);
     font-size: 3rem;
     color: var(--white-color);
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right-nav .input-wrapper{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--lavender-color);
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.right-nav .input-wrapper:focus-within{
+    border: 2px solid var(--green-color);
+}
+
+.right-nav .input-wrapper input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.add-note-btn{
+    background-color: #A4C401;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    color: var(--main-bg);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
