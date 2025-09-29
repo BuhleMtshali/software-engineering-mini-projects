@@ -42,6 +42,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .left-nav .img-wrapp{
@@ -101,10 +102,13 @@ nav{
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
-.add-note-btn i{
-    font-size: 1.9rem;
+.input-wrapper i{
+    font-size: 1.5rem;
 }
 
 .add-note-btn:hover{
