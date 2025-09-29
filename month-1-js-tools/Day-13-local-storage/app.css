@@ -22,6 +22,10 @@ body{
     padding: 20px;
 }
 
+header{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--lavender-color);
+}
 nav{
     display: flex;
     align-items: center;
@@ -97,4 +101,13 @@ nav{
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+
+.add-note-btn i{
+    font-size: 1.9rem;
+}
+
+.add-note-btn:hover{
+    background-color: var(--lavender-color);
+    color: var(--white-color);
 }
