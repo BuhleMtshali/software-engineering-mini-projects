@@ -30,6 +30,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -117,6 +118,9 @@ nav{
 }
 
 /* PLACEHOLDER STYLES */
+main{
+    width: 100%;
+}
 
 .placeholder-wrapper{
     width: 90%;
@@ -146,3 +150,14 @@ nav{
 }
 
 /* NOTES STYLES */
+.notes-wrapper{
+   width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.note{
+    border: 2px solid var(--green-color);
+}
