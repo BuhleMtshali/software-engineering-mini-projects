@@ -30,5 +30,11 @@ submitNote.addEventListener("submit", (e) => {
     }
 
     //PUSHING THIS TO THE ARRAY
-    notes
+    notes.push(userNote);
+    console.log(notes)
+
+    submitNote.reset();
+
+    //HIDE THE MODAL AFTER THE USER HITS SUBMIT
+    modal.style.display = 'none'
 })
