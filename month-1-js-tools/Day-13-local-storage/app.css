@@ -218,3 +218,85 @@ color: var(--white-color);
 }
 
 /* END OF RESPONSIVE NOTES */
+
+.modal {
+    border: 2px solid var(--lavender-color);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto;
+    height: 40%;
+    overflow: auto;
+    background-color: var(--main-bg);
+    padding: 15px;
+    
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal .modal-content i{
+    position: relative;
+    margin-left: auto;
+    font-size: 1.9rem;
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+    gap: 15px;
+}
+
+.modal-content form input,
+textarea{
+    padding: 20px 10px;
+    background-color: #2B292B;
+    border: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+
+textarea:focus{
+    outline: 2px solid var(--green-color);
+}
+
+form input:focus{
+    border: none;
+    outline: 2px solid var(--green-color);
+}
+
+.modal label{
+    color: var(--green-color);
+}
+
+form button{
+    max-width: 30%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover{
+    border: 2px solid var(--lavender-color);
+    background-color: var(--main-bg);
+    color: var(--lavender-color);
+}

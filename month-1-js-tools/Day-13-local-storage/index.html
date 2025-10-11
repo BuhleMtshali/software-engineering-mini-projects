@@ -46,14 +46,23 @@
                 <small class="date">created: <span id="date">11/10/2025</span></small>
             </div>
             <!-- NOTES 1 -->
-            <div class="note">
-                <i class="fa-solid fa-trash"></i>
-                <h2 class="notes-heading" id="notes-heading">New Note</h2>
-                <p class="notes-text" id="notes-text">Notes text</p>
-                <small class="date">created: <span id="date">11/10/2025</span></small>
-            </div>
-            <!-- NOTES 2 -->
         </div>
+
+    <!-- MODAL WRAPPER -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <i class="fa-solid fa-xmark" id="closeModal"></i>
+                <form action="" id="note-form">
+                    <h1>Enter your Note...</h1>
+                    <label for="note-form-heading">Note Heading...</label>
+                    <input type="text" name="note-form-heading" id="note-form-heading" placeholder="Enter Note Heading..." required>
+                    <label for="note-content">Note Content...</label>
+                    <textarea name="note-content" id="note-content" placeholder="Enter your notes content..."></textarea>
+                    <button type="submit" id="submit-btn">Add Note</button>
+                </form>
+            </div>
+        </div>
+    <!-- MODAL WRAPPER ENDING -->
     </main>
 </div>
 <script src="app.js"></script>
