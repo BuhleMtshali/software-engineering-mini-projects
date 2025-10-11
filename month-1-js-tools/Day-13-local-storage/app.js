@@ -35,6 +35,36 @@ submitNote.addEventListener("submit", (e) => {
 
     submitNote.reset();
 
-    //HIDE THE MODAL AFTER THE USER HITS SUBMIT
+    //HIDING THE MODAL AFTER THE USER HITS SUBMIT
     modal.style.display = 'none'
+
+    displayNotes()
 })
+
+//DISPLAYING THE RESULTS
+let placeHolder = document.querySelector(".placeholder-wrapper")
+let notesWrapper = document.querySelector(".notes-wrapper")
+let notesTemplate = '';
+
+function displayNotes(){
+    if(notes.length > 0){
+
+        //GET THE NOTES THE ARRAY
+        notes.forEach((note) => {
+            console.log(note)
+            notesTemplate += `
+                            <div class="notes-wrapper">
+                                <div class="note">
+                                <i class="fa-solid fa-trash"></i>
+                                <h2 class="notes-heading" id="notes-heading">${note.noteHeading}</h2>
+                                <p class="notes-text" id="notes-text">${note.noteText}</p>
+                                <small class="date">created: <span id="date">11/10/2025</span></small>
+                                </div>
+                            </div> 
+
+                            `
+
+            placeHolder.innerHTML = notesTemplate;
+        })
+    } 
+}
