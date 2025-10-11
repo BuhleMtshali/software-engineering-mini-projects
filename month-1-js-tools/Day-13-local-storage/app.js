@@ -44,27 +44,31 @@ submitNote.addEventListener("submit", (e) => {
 //DISPLAYING THE RESULTS
 let placeHolder = document.querySelector(".placeholder-wrapper")
 let notesWrapper = document.querySelector(".notes-wrapper")
-let notesTemplate = '';
+let mainElement = document.querySelector("#main-element")
 
 function displayNotes(){
+    let notesTemplate = '';
+   
     if(notes.length > 0){
+        placeHolder.style.display = 'none'
 
         //GET THE NOTES THE ARRAY
         notes.forEach((note) => {
             console.log(note)
             notesTemplate += `
-                            <div class="notes-wrapper">
+                                
                                 <div class="note">
                                 <i class="fa-solid fa-trash"></i>
                                 <h2 class="notes-heading" id="notes-heading">${note.noteHeading}</h2>
                                 <p class="notes-text" id="notes-text">${note.noteText}</p>
                                 <small class="date">created: <span id="date">11/10/2025</span></small>
                                 </div>
-                            </div> 
-
+                                
                             `
-
-            placeHolder.innerHTML = notesTemplate;
+            
         })
-    } 
+    } else {
+         placeHolder.style.display = 'flex';
+    }
+    notesWrapper.innerHTML = notesTemplate
 }
