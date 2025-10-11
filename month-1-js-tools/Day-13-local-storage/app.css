@@ -150,14 +150,39 @@ main{
 }
 
 /* NOTES STYLES */
-.notes-wrapper{
-   width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+.notes-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+  gap: 1rem; /* Space between notes */
+  box-sizing: border-box;
+  padding: 1rem;
 }
+
 
 .note{
     border: 2px solid var(--green-color);
 }
+
+
+/* MAKING THE NOTES RESPONSIVE */
+@media (max-width: 1024px) {
+  .notes-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .notes-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .notes-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* END OF RESPONSIVE NOTES */
