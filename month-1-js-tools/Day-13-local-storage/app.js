@@ -1,3 +1,6 @@
+//NOTES ARRAY
+let notes = []
+
 // SETTING UP THE MODAL
 const modal = document.querySelector("#modal");
 const closeModal = document.querySelector("#closeModal")
@@ -13,3 +16,19 @@ closeModal.addEventListener("click", () => {
     modal.style.display = "none";
 })
 
+//COLLECTING THE NOTE FROM THE USER
+let notesH = document.querySelector("#note-form-heading");
+let notesT = document.querySelector("#note-content");
+const submitNote = document.querySelector("#note-form")
+submitNote.addEventListener("submit", (e) => {
+    e.preventDefault();
+    
+    //GETTING THE NOTE OBJECT
+    let userNote = {
+        noteHeading: notesH.value,
+        noteText: notesT.value
+    }
+
+    //PUSHING THIS TO THE ARRAY
+    notes
+})
