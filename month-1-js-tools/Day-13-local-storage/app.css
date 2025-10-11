@@ -163,10 +163,33 @@ main{
 
 .note{
     border: 2px solid var(--green-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #2B292B;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+.note:hover{
+    border: 3px solid var(--lavender-color);
+}
+
+.note #date,  
+.note .date,
+.note i{
+    color: var(--lavender-color);
+    position: relative;
+    margin-left: auto;
+}
+
+.note .date{
+color: var(--white-color);
+}
 
 /* MAKING THE NOTES RESPONSIVE */
+
 @media (max-width: 1024px) {
   .notes-wrapper {
     grid-template-columns: repeat(3, 1fr);
