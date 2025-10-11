@@ -116,6 +116,8 @@ nav{
     color: var(--white-color);
 }
 
+/* PLACEHOLDER STYLES */
+
 .placeholder-wrapper{
     width: 90%;
     margin: 20px auto;
@@ -142,3 +144,5 @@ nav{
 .placeholder-wrapper h2{
     color: var(--lavender-color);
 }
+
+/* NOTES STYLES */
